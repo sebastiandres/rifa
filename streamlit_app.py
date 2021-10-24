@@ -26,9 +26,10 @@ def asignar_ganador():
 st.set_page_config(layout="wide")
 
 # Settings
-N_cartones = 15
-N_premios = 10
-N_numeros = 20
+N_cartones = 2 # Cantidad de cartones en juego
+N_numeros = 20 # Números por cada cartón
+N_premios = 16 # Cantidad total de premios
+
 if 'i' not in st.session_state:
     st.session_state.i = 1
 if 'premio_i' not in st.session_state:
