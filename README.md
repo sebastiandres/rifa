@@ -1,20 +1,10 @@
-# Streamlit Template
+# Hacer una rifa online
 
-This is a template for Streamlit projects.
+# Enlace
 
-# Customize
+[https://sebastiandres.github.io/rifa/](https://sebastiandres.github.io/rifa/)
 
-Edit `/streamlit_app.py` and `/pages/*.py`to customize this app.
-
-# Online demo
-
-To see an online demo, use this link:
-
-[https://sebastiandres.github.io/NAME_OF_APP](https://sebastiandres.github.io/NAME_OF_APP)
-
-## Local run
-
-To locally run the app, 
+## Ejecución local
 
 ```
 streamlit run streamlit_app.py
