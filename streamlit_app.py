@@ -24,12 +24,21 @@ def asignar_ganador():
 
 # Set wide display
 st.set_page_config(layout="wide")
+    
+# Sidebar
+with st.sidebar:
+    # Titulo
+    title = st.text_input(label="Título", value="Rifa - Sudamericano Gimnasia")
+    # Subheader
+    subheader = st.text_input(label="Subtítulo", value="Eloísa Campos - 24 Noviembre 2021")
+    # Cantidad de cartones en juego
+    N_cartones = st.number_input(label="Número de Rifas", value=64, min_value=1, max_value=100000)
+    # Números por cada cartón
+    N_numeros = st.number_input(label="Cantidad de número en cada Rifa", value=20, min_value=1, max_value=100000)
+    # Cantidad total de premios
+    N_premios = st.number_input(label="Cantidad de premios", value=16, min_value=1, max_value=100000)
 
-# Settings
-N_cartones = 2 # Cantidad de cartones en juego
-N_numeros = 20 # Números por cada cartón
-N_premios = 16 # Cantidad total de premios
-
+# Predefinir
 if 'i' not in st.session_state:
     st.session_state.i = 1
 if 'premio_i' not in st.session_state:
@@ -47,10 +56,8 @@ if 'ganador' not in st.session_state:
 
 # Title
 c1, c2 = st.columns([10,2])
-c1.title("Rifa - Sudamericano Gimnasia")
-c1.subheader("Eloísa Campos - 24 Noviembre 2021")
-c2.image("eloprogimnasta.png", width=100)
-c2.caption("instagram: @eloprogimnasta")
+c1.title(title)
+c1.subheader(subheader)
 # Configuration
 c1, c2, c3 = st.columns([1, 3, 3])
 i = int(c1.number_input("Sorteo", value=1, min_value=1, max_value=N_premios)) - 1
