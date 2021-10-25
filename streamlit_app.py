@@ -28,9 +28,9 @@ st.set_page_config(layout="wide")
 # Sidebar
 with st.sidebar:
     # Titulo
-    title = st.text_input(label="Título", value="Rifa - Sudamericano Gimnasia")
+    title = st.text_input(label="Título", value="Título de mi rifa")
     # Subheader
-    subheader = st.text_input(label="Subtítulo", value="Eloísa Campos - 24 Noviembre 2021")
+    subheader = st.text_input(label="Subtítulo", value="Nombre Beneficiario - Fecha")
     # Cantidad de cartones en juego
     N_cartones = st.number_input(label="Número de Rifas", value=64, min_value=1, max_value=100000)
     # Números por cada cartón
