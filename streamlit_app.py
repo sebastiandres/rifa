@@ -36,7 +36,7 @@ with st.sidebar:
     # Números por cada cartón
     N_numeros = st.number_input(label="Cantidad de número en cada Rifa", value=20, min_value=1, max_value=100000)
     # Cantidad total de premios
-    N_premios = st.number_input(label="Cantidad de premios", value=16, min_value=1, max_value=100000)
+    N_premios = st.number_input(label="Cantidad de premios", value=19, min_value=1, max_value=100000)
 
 # Predefinir
 if 'i' not in st.session_state:
